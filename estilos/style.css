@@ -1,10 +1,11 @@
+/* Quitar todos los formatos del documento y establecer un tipo de tipografía */
 body {
    margin: 0;
    padding: 0;
    background-color: white;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* Ajustamos la parte de arriba el Header de la página */
 header {
    width: 100vw;
    height: 3rem;
@@ -23,7 +24,7 @@ div>h1 {
    color: black;
    font-size: 20px;
 }
-
+/* Esto es el nombre de la academia */
 h1 {
    display: flex;
    flex-direction: row-reverse;
@@ -56,7 +57,7 @@ section>article>img {
 section>article>div>ul#cabecera {
    position: absolute;
    z-index: 2;
-   top: 15vh;
+   top: 12vh;
    left: 3vw;
 }
 
@@ -67,7 +68,7 @@ section>article#contenedorFoto {
 section>article>div>ul#cabecera>li {
    font-size: 25px;
    font-weight: bold;
-   margin-bottom: 4.5rem;
+   margin-bottom: 3rem;
 }
 
 /* Parte de contacto */
@@ -269,8 +270,9 @@ footer>div>h3 {
 }
 
 /* Hacemos la mediaquery para tablet */
-@media (min-width: 820px) {
+@media (min-width: 800px) {
 
+   /* Cabecera con el titulo */
    header {
       width: 100vw;
       height: 6rem;
@@ -296,6 +298,8 @@ footer>div>h3 {
 
    }
 
+   /* Menu desplegable */
+
    li>a {
       text-decoration: none;
       color: black;
@@ -305,6 +309,7 @@ footer>div>h3 {
       text-align: left;
    }
 
+   /* Imagen inicial mas texto */
 
    section>article>img {
       width: 100vw;
@@ -316,10 +321,12 @@ footer>div>h3 {
    }
 
    section>article>div>ul#cabecera>li {
-      font-size: 50px;
+      font-size: 4vw;
       font-weight: bold;
-      margin-bottom: 4.5rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem  ;
    }
+   /* Formulario para mas información */
    section.formulario>article>h3{
       font-size: 1.5rem;
 
@@ -365,6 +372,15 @@ section.formulario>form>textarea{
    width: 90vw;
 }
 }
-@media(min-width: 12px){
-   
+/* mediaquery para ordenador */
+@media(min-width: 1024px){
+   header>div#menuHamburguesa>span{
+      background-color: black;
+      width: 4rem;
+      height: .5rem;
+      display: block;
+      border-radius: 10px;
+      transition: all 1s;
+      margin-bottom: 3px;
+   }
 }
