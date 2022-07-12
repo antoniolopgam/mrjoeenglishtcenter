@@ -5,6 +5,7 @@ body {
    background-color: white;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 /* Ajustamos la parte de arriba el Header de la página */
 header {
    width: 100vw;
@@ -18,23 +19,27 @@ header>div:nth-of-type(2) {
    margin-top: 0.65em;
 }
 
-div>h1 {
+header>div> {
    display: flex;
-   margin-bottom: -1.5em;
-   color: black;
-   font-size: 20px;
+   margin-bottom: 2em;
+
 }
+
 /* Esto es el nombre de la academia */
-h1 {
+header>div>a {
    display: flex;
    flex-direction: row-reverse;
-
+   color: black;
+   font-size: 20px;
+   margin-bottom: -1.4em;
+   font-weight: bold;
+   margin-top: 1em;
 }
 
 header>div>h5 {
-   margin-left: 4em;
+   margin-left: 6em;
    margin-top: 25px;
-   margin-right: 22px;
+   margin-right: px;
    font-weight: lighter;
 }
 
@@ -256,11 +261,20 @@ footer {
    flex-direction: column;
    text-align: center;
 }
-
+footer>div:nth-of-type(2){
+   margin-top: -1em;
+}
+footer>div>p{
+   color: white;
+   font-size: small;
+}
 footer>div>a {
    color: white;
    font-size: small;
 
+}
+footer>div>h4{
+   color: white;
 }
 
 footer>div>h3 {
@@ -270,7 +284,7 @@ footer>div>h3 {
 }
 
 /* Hacemos la mediaquery para tablet */
-@media (min-width: 800px) {
+@media (min-width: 750px) {
 
    /* Cabecera con el titulo */
    header {
@@ -281,20 +295,21 @@ footer>div>h3 {
       justify-content: space-between;
    }
 
-   header>div>h1 {
+   header>div>a {
       display: flex;
-      margin-bottom: -1.5em;
+      flex-direction: row-reverse;
+      margin-bottom: -0.6em;
       color: black;
-      font-size: 20px;
-      margin-right: 5em;
-      font-size: 2em;
-      margin-top: 1em;
+      font-size: 2.5em;
+      margin-right: 1em;
+      margin-top: 0.6em;
    }
 
    header>div>h5 {
       color: black;
       margin-right: 12em;
-      font-size: medium;
+      font-size: 1em;
+
 
    }
 
@@ -321,13 +336,14 @@ footer>div>h3 {
    }
 
    section>article>div>ul#cabecera>li {
-      font-size: 4vw;
+      font-size: 6.5vw;
       font-weight: bold;
       margin-bottom: 2em;
-      margin-top: 2em  ;
+      margin-top: 0.6em;
    }
+
    /* Formulario para mas información */
-   section.formulario>article>h3{
+   section.formulario>article>h3 {
       font-size: 1.5em;
 
    }
@@ -336,6 +352,7 @@ footer>div>h3 {
       font-size: 1.5em;
       margin-left: 2em;
    }
+
    section>article>div:nth-of-type(2) {
       font-size: 1.5em;
       margin-left: 2em;
@@ -362,19 +379,23 @@ footer>div>h3 {
       margin-top: -20em;
       margin-right: 8em;
    }
-   section.formulario>article>form{
+
+   section.formulario>article>form {
       display: flex;
    }
-   section.formulario>form>input{
-      width: 90vw;   
+
+   section.formulario>form>input {
+      width: 90vw;
+   }
+
+   section.formulario>form>textarea {
+      width: 90vw;
+   }
 }
-section.formulario>form>textarea{
-   width: 90vw;
-}
-}
+
 /* mediaquery para ordenador */
-@media(min-width: 1024px){
-   header>div#menuHamburguesa>span{
+@media(min-width: 1024px) {
+   header>div#menuHamburguesa>span {
       background-color: black;
       width: 4em;
       height: .5em;
@@ -383,4 +404,11 @@ section.formulario>form>textarea{
       transition: all 1s;
       margin-bottom: 3px;
    }
+
+section>article>div>ul#cabecera>li {
+   font-size: 4vw;
+   font-weight: bold;
+   margin-bottom: 2em;
+   margin-top: 0.6em;
+}
 }
