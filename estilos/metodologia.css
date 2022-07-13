@@ -118,19 +118,17 @@ section.contenedor {
    display: flex;
    flex-direction: column;
 }
+section.contenedor>h3{
+   font-size: 2em;
+   padding: 0.5em;
+   margin: 0;
+}
 
 section.contenedor>div.texto {
    padding: 1em;
    background-color: lightcoral;
    margin: 0;
 }
-
-section.contenedor>div.texto>h3 {
-   font-size: 2em;
-   margin-top: -0.2em;
-   color: white;
-}
-
 section.contenedor>div.texto>p {
    text-align: justify;
    color: white;
