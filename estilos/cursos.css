@@ -126,6 +126,8 @@ h3 {
 /* Primer Párrafo */
 section.contenedor>div.primercurso {
     background-color: #F3BB40;
+    width: 100vw;
+    /* height: 40vh; */
 }
 
 section.contenedor>div.primercurso>h4 {
@@ -136,6 +138,8 @@ section.contenedor>div.primercurso>h4 {
 section.contenedor>div.primercurso>h4,
 p {
     text-align: justify;
+
+
 }
 
 /* Segundo Párrafo */
@@ -248,6 +252,61 @@ footer>div>h3 {
     section.contenedor>div{
         height: 35vh;
     }
+    /* Primer Párrafo */
+section.contenedor>div.primercurso {
+    background-color: #F3BB40;
+    width: 100vw;
+    height: 62vh;
+}
+
+section.contenedor>div.primercurso>h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+section.contenedor>div.primercurso>h4,
+p {
+    text-align: justify;
+
+
+}
+
+/* Segundo Párrafo */
+section.contenedor>div.segundocurso {
+    background-color: #93DAB7;
+    width: 100vw;
+    height: 60vh;
+}
+
+section.contenedor>div.segundocurso>h4 {
+    font-size: 1em;
+    font-weight: bold;
+ 
+}
+
+
+section.contenedor>div.segundocurso>h4,
+p {
+    text-align: justify;
+}
+
+/* Tercer Párrafo */
+section.contenedor>div.tercercurso {
+    background-color: #E992A7;
+    width: 100vw;
+    height: 60vh;
+}
+
+section.contenedor>div.tercercurso>h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+section.contenedor>div.tercerocurso>h4,
+p {
+    text-align: justify;
+    margin: 1em;
+}
 
 }
 /* Mediaqeuery de ordenador */
@@ -261,4 +320,59 @@ footer>div>h3 {
         transition: all 1s;
         margin-bottom: 3px;
     }
+        /* Primer Párrafo */
+section.contenedor>div.primercurso {
+    background-color: #F3BB40;
+    width: 100vw;
+    height: 46vh;
+}
+
+section.contenedor>div.primercurso>h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+section.contenedor>div.primercurso>h4,
+p {
+    text-align: justify;
+
+
+}
+
+/* Segundo Párrafo */
+section.contenedor>div.segundocurso {
+    background-color: #93DAB7;
+    width: 100vw;
+    height: 45vh;
+}
+
+section.contenedor>div.segundocurso>h4 {
+    font-size: 1em;
+    font-weight: bold;
+ 
+}
+
+
+section.contenedor>div.segundocurso>h4,
+p {
+    text-align: justify;
+}
+
+/* Tercer Párrafo */
+section.contenedor>div.tercercurso {
+    background-color: #E992A7;
+    width: 100vw;
+    height: 40vh;
+}
+
+section.contenedor>div.tercercurso>h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+section.contenedor>div.tercerocurso>h4,
+p {
+    text-align: justify;
+    margin: 1em;
+}
 }
