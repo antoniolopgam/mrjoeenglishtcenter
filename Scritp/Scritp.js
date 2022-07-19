@@ -1,3 +1,4 @@
+// Jquery para hacer el menu de hamburguesa de manera más sencilla, animandolo cuando el usuario pulse.
 $(function(){
     $("#menuHamburguesa").click(function(){
         $("#opcionesMenu").stop()

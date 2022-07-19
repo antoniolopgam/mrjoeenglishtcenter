@@ -49,7 +49,7 @@ div#menuHamburguesa {
    justify-content: space-around;
    cursor: pointer;
 }
-
+/* Barras del menu hamburguesas */
 span {
    background-color: black;
    width: 2.2em;
@@ -79,6 +79,8 @@ ul#opcionesMenu>li {
    padding: .5em;
 }
 
+/* Enlace de cada pagina de la web */
+
 a {
    text-decoration: none;
    color: black;
@@ -97,6 +99,8 @@ ul#opcionesMenu>li:hover>a {
    color: white;
 
 }
+/* Se mueven las lineas para crear la animación cuando se pulsa */
+
 
 .primera {
    transform: translateY(.5em) rotate(45deg);
@@ -118,11 +122,13 @@ section.contenedor {
    display: flex;
    flex-direction: column;
 }
+/* Titutlo */
 h3{
    font-size: 2em;
    padding: 0.5em;
    margin: 0;
 }
+/* Damos fotmatos a los textos */
 
 section.contenedor>div.texto {
    padding: 1em;
@@ -244,11 +250,10 @@ footer>div>h3 {
 
    section.contenedor>div.texto>p{
       font-size: 24px;
-   }      /* height: 40vw; */
+   }
 
    section.contenedor>div:nth-of-type(2)>img{
       width: 40vw;
       height: 90vh;
-      /* object-fit: cover; */
    }
 }

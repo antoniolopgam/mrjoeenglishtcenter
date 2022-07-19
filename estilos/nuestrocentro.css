@@ -1,3 +1,5 @@
+/* Empezamos quitando todos los margenes y poniendo la tipo que se va a utilizar en toda la pagina */
+
 body {
     margin: 0;
     padding: 0;
@@ -48,6 +50,7 @@ div#menuHamburguesa {
     justify-content: space-around;
     cursor: pointer;
 }
+/* Esto son las barras del menu de Hamburguesa */
 
 span {
     background-color: black;
@@ -68,14 +71,17 @@ ul#opcionesMenu {
     background-color: white;
     width: 100vw;
     height: 100vh;
-    /* margin-top: 2em; */
 }
+/* Enlace a cada pagina de la web */
+
 
 ul#opcionesMenu>li {
     border-bottom: 1px solid black;
     cursor: pointer;
     padding: .5em;
 }
+/* Sombre la lista cuando pulsas */
+
 
 a {
     text-decoration: none;
@@ -94,6 +100,7 @@ ul#opcionesMenu>li:hover {
 ul#opcionesMenu>li:hover>a {
     color: white;
 }
+/* Se mueven las lineas para crear la animación cuando se pulsa */
 
 .primera {
     transform: translateY(.5em) rotate(45deg);
@@ -109,13 +116,15 @@ ul#opcionesMenu>li:hover>a {
     transform: translateY(-.5em) rotate(-45deg);
     transition: all .4s;
 }
-/* Damos fotmatos a los textos */
+/* Titutlo  */
+
 h3 {
     font-size: 2em;
     padding: 0.5em;
     margin: 0;
 }
-/*Texto */
+/* Damos fotmatos al texto */
+/*Texto  le hacemos flex direcction colum para que con el movil sea mas sencillo ver*/
 section>div{
     display: flex;
     flex-direction: column;
@@ -179,8 +188,10 @@ footer>div>h3 {
     color: white;
     margin-top: .1em;
 }
+/* Media query para tablet */
 
-@media (min-width: 750px) {
+
+@media (min-width: 700px) {
 
     /* Cabecera con el titulo */
     header {
@@ -218,7 +229,9 @@ footer>div>h3 {
         text-align: left;
     }
 }
+/* Mediaquery para ordenador */
 @media(min-width: 1024px) {
+/* menu hamburguesa para que se vea mas acorde al tamaño de pantalla */
     header>div#menuHamburguesa>span {
         background-color: black;
         width: 4em;
@@ -228,6 +241,7 @@ footer>div>h3 {
         transition: all 1s;
         margin-bottom: 3px;
     }
+    /* Cambiamos el formato del texto y las imagenes para que se vean de manera horizonal */
     section.contenedor{
         display: flex;
         flex-direction: row;
@@ -237,6 +251,7 @@ footer>div>h3 {
         flex-direction: column;
         border: 4px solid white;
      }
+/* Esta son los diferentes cursos */
      section.contenedor>div.primercurso{
         width: 33.33vw;
      }
@@ -247,7 +262,6 @@ footer>div>h3 {
         width: 33.33vw;
      }
     
-
      section>div.imagenes{
         display: flex;
         flex-direction: row;

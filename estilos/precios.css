@@ -1,3 +1,4 @@
+/* Empezamos quitando todos los margenes y poniendo la tipo que se va a utilizar en toda la pagina */
 body {
     margin: 0;
     padding: 0;
@@ -48,7 +49,7 @@ div#menuHamburguesa {
     justify-content: space-around;
     cursor: pointer;
 }
-
+/* Esto son las barras del menu de Hamburguesa */
 span {
     background-color: black;
     width: 2.2em;
@@ -68,7 +69,6 @@ ul#opcionesMenu {
     background-color: white;
     width: 100vw;
     height: 100vh;
-    /* margin-top: 2em; */
 }
 
 ul#opcionesMenu>li {
@@ -76,7 +76,7 @@ ul#opcionesMenu>li {
     cursor: pointer;
     padding: .5em;
 }
-
+/* Enlace a cada pagina de la web */
 a {
     text-decoration: none;
     color: black;
@@ -85,7 +85,7 @@ a {
     margin-left: .5em;
     text-align: left;
 }
-
+/* Sombre la lista cuando pulsas */
 ul#opcionesMenu>li:hover {
     background-color: black;
     transition: all 0.2s;
@@ -94,7 +94,7 @@ ul#opcionesMenu>li:hover {
 ul#opcionesMenu>li:hover>a {
     color: white;
 }
-
+/* Se mueven las lineas para crear la animación cuando se pulsa */
 .primera {
     transform: translateY(.5em) rotate(45deg);
     transition: all .4s;
@@ -109,14 +109,14 @@ ul#opcionesMenu>li:hover>a {
     transform: translateY(-.5em) rotate(-45deg);
     transition: all .4s;
 }
-/* Damos fotmatos a los textos */
+/* Titutlo  */
 h3 {
     font-size: 2em;
     padding: 0.5em;
     margin: 0;
 }
 
-/* Formato a los textos */
+/* Formato a los textos, color */
 section>div.primero{
     background-color: #F3BB40;
 }
@@ -163,7 +163,10 @@ footer>div>h3 {
     color: white;
     margin-top: .1em;
 }
+/* Media query para tablet */
+
 @media(min-width: 700px) {
+    /* Modifica la cabecera de la pagina para que crezca en funcion del tamaño de pantalla */
     header {
         width: 100vw;
         height: 6em;
@@ -202,7 +205,9 @@ footer>div>h3 {
     section>div{
         height: 24vh;
     }
+    /* Media query para ordenador */
 }@media(min-width: 1024px) {
+    /* Esto modifica el tamaño de los span para que se vea mas acorde al tamaño de la pantalla */
     header>div#menuHamburguesa>span {
         background-color: black;
         width: 4em;
@@ -212,6 +217,7 @@ footer>div>h3 {
         transition: all 1s;
         margin-bottom: 3px;
     }
+    /* Modifica el tamaño de los parrafos para que crezcan en función de la pantalla haciendo un display row para que se vean en horizonal y de manera más visual todos los precios */
     section{
         display: flex;
         flex-direction: row;

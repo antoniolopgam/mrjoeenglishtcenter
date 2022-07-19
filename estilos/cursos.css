@@ -1,3 +1,5 @@
+/* Empezamos quitando todos los margenes y poniendo la tipo que se va a utilizar en toda la pagina */
+
 body {
     margin: 0;
     padding: 0;
@@ -48,6 +50,7 @@ div#menuHamburguesa {
     justify-content: space-around;
     cursor: pointer;
 }
+/* Esto son las barras del menu de Hamburguesa */
 
 span {
     background-color: black;
@@ -68,7 +71,6 @@ ul#opcionesMenu {
     background-color: white;
     width: 100vw;
     height: 100vh;
-    /* margin-top: 2em; */
 }
 
 ul#opcionesMenu>li {
@@ -76,6 +78,8 @@ ul#opcionesMenu>li {
     cursor: pointer;
     padding: .5em;
 }
+/* Enlace a cada pagina de la web */
+
 
 a {
     text-decoration: none;
@@ -85,6 +89,7 @@ a {
     margin-left: .5em;
     text-align: left;
 }
+/* Sombre la lista cuando pulsas */
 
 ul#opcionesMenu>li:hover {
     background-color: black;
@@ -94,6 +99,7 @@ ul#opcionesMenu>li:hover {
 ul#opcionesMenu>li:hover>a {
     color: white;
 }
+/* Se mueven las lineas para crear la animación cuando se pulsa */
 
 .primera {
     transform: translateY(.5em) rotate(45deg);
@@ -200,7 +206,9 @@ footer>div>h3 {
     margin-top: .1em;
 }
 
-@media (min-width: 750px) {
+/* Mdeia query para tablet */
+
+@media (min-width: 700px) {
 
     /* Cabecera con el titulo */
     header {
@@ -242,6 +250,7 @@ footer>div>h3 {
     }
 
 }
+/* Mediaqeuery de ordenador */
 @media(min-width: 1024px) {
     header>div#menuHamburguesa>span {
         background-color: black;
