@@ -256,7 +256,7 @@ footer>div>h3 {
 section.contenedor>div.primercurso {
     background-color: #F3BB40;
     width: 100vw;
-    height: 62vh;
+    height: 55vh;
 }
 
 section.contenedor>div.primercurso>h4 {
@@ -275,7 +275,7 @@ p {
 section.contenedor>div.segundocurso {
     background-color: #93DAB7;
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
 }
 
 section.contenedor>div.segundocurso>h4 {
@@ -294,7 +294,7 @@ p {
 section.contenedor>div.tercercurso {
     background-color: #E992A7;
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
 }
 
 section.contenedor>div.tercercurso>h4 {
